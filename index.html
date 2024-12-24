@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-	<title>BlackWater</title>
-	<style>
-		html {
-			height:100%;
-		}
-		body {
-			background-color:#000;
-			margin:0;
-			height:100%;
-		}
-	</style>
-	<!-- copy these lines to your document head: -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Archive Player</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <h1>Radio Archive Audio Player</h1>
 
-	<meta name="viewport" content="user-scalable=no, width=device-width" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Embedded Playlist -->
+    <section id="playlist">
+        <h2>Audio Playlist</h2>
+        <iframe 
+            src="radioarchive_playlist.html" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </section>
 
-	<!-- end copy -->
-  </head>
-  <body>
-	<!-- copy these lines to your document: -->
+    <!-- Internet Archive iframe -->
+    <section id="archive-iframe">
+        <h2>Explore More on Internet Archive</h2>
+        <iframe 
+            src="https://archive.org/embed/radioarchive.cx" 
+            width="100%" 
+            height="600" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </section>
 
-	<div id="blackwater_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1240px;height:800px;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="BlackWater.hyperesources/blackwater_hype_generated_script.js?63244"></script>
-	</div>
-
-	<!-- end copy -->
-  </body>
+    <footer>
+        <p>&copy; 2024 Radio Archive | Powered by Internet Archive</p>
+    </footer>
+</body>
 </html>
